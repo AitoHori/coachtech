@@ -1,11 +1,6 @@
-function scrollTop(button) {
-  const target = document.getElementById(button);
-  target.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  });
-}
-
-scrollTop('button');
+const target = document.getElementById("menu");
+target.addEventListener('click', () => {
+  target.classList.toggle('open');
+  const nav = document.getElementById("nav");
+  nav.classList.toggle('in');
+});
