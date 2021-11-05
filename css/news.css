@@ -141,6 +141,16 @@
   color: #000;
   font-weight: bold;
 }
+@media screen and (max-width: 768px) {
+  .news {
+    margin-bottom: 10%;
+    margin-top: 25%;
+  }
+  .news__list {
+    width: 85%;
+    font-size: 15px;
+  }
+}
 @media screen and (max-width: 480px) {
   .header__img {
     width: 50%;
@@ -153,16 +163,6 @@
   }
   .news {
     margin-bottom: 20%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .news {
-    margin-bottom: 10%;
-    margin-top: 25%;
-  }
-  .news__list {
-    width: 85%;
-    font-size: 15px;
   }
 }
 
@@ -194,6 +194,14 @@
   font-size: 18px;
   font-weight: bold;
 }
+@media screen and (max-width: 768px) {
+  .contact {
+    height: 300px;
+  }
+  .contact__ttl {
+    padding-top: 10%;
+  }
+}
 @media screen and (max-width: 480px) {
   .contact__ttl {
     padding-top: 20%;
@@ -214,14 +222,7 @@
     height: 100%;
   }
 }
-@media screen and (max-width: 768px) {
-  .contact {
-    height: 300px;
-  }
-  .contact__ttl {
-    padding-top: 10%;
-  }
-}
+
 /* 共通フッター部分 */
 .fotter {
   width: 100%;
@@ -259,21 +260,30 @@
 }
 .fot__phone {
   display: none;
-  background-color: #212121;
-  text-align: center;
-  padding: 10% 5%;
 }
-.fot__phone__copy {
-  color: #fff;
-  padding-bottom: 4%;
-  font-size: small;
-}
-.fot__phone__link {
-  color: #fff;
-  text-decoration: none;
-}
-.fot__ipad {
-  display: none;
+
+@media screen and (max-width: 768px) {
+  .fotter {
+    display: none;
+  }
+  .fot__phone {
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #212121;
+    height: 300px;
+    padding-top: 0;
+  }
+  .fot__phone__copy {
+    color: #fff;
+    font-size: small;
+  }
+  .fot__phone__link {
+    color: #fff;
+    line-height: 200%;
+    text-decoration: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -282,27 +292,18 @@
   }
   .fot__phone {
     display: block;
-  }
-}
-@media screen and (max-width: 768px) {
-  .fotter {
-    display: none;
-  }
-  .fot__ipad {
-    display: block;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     background-color: #212121;
-    height: 300px;
+    text-align: center;
+    padding-top: 16%;
+    padding-bottom: 12%;
   }
-  .fot__ipad__copy {
+  .fot__phone__copy {
     color: #fff;
+    padding-bottom: 4%;
     font-size: small;
   }
-  .fot__ipad__link_1 {
+  .fot__phone__link {
     color: #fff;
-    line-height: 200%;
     text-decoration: none;
   }
 }

@@ -136,7 +136,12 @@
   color: #fff;
   cursor: pointer;
 }
-
+@media screen and (max-width: 768px) {
+  .form {
+    width: 85%;
+    margin-bottom: 10%;
+  }
+}
 @media screen and (max-width: 480px) {
   .header__img {
     width: 50%;
@@ -149,12 +154,6 @@
   }
   .form__text {
     margin-bottom: 4%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .form {
-    width: 85%;
-    margin-bottom: 10%;
   }
 }
 
@@ -195,21 +194,30 @@
 }
 .fot__phone {
   display: none;
-  background-color: #212121;
-  text-align: center;
-  padding: 10% 5%;
 }
-.fot__phone__copy {
-  color: #fff;
-  padding-bottom: 4%;
-  font-size: small;
-}
-.fot__phone__link {
-  color: #fff;
-  text-decoration: none;
-}
-.fot__ipad {
-  display: none;
+
+@media screen and (max-width: 768px) {
+  .fotter {
+    display: none;
+  }
+  .fot__phone {
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #212121;
+    height: 300px;
+    padding-top: 0;
+  }
+  .fot__phone__copy {
+    color: #fff;
+    font-size: small;
+  }
+  .fot__phone__link {
+    color: #fff;
+    line-height: 200%;
+    text-decoration: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -218,28 +226,18 @@
   }
   .fot__phone {
     display: block;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .fotter {
-    display: none;
-  }
-  .fot__ipad {
-    display: block;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     background-color: #212121;
-    height: 300px;
+    text-align: center;
+    padding-top: 16%;
+    padding-bottom: 12%;
   }
-  .fot__ipad__copy {
+  .fot__phone__copy {
     color: #fff;
+    padding-bottom: 4%;
     font-size: small;
   }
-  .fot__ipad__link_1 {
+  .fot__phone__link {
     color: #fff;
-    line-height: 200%;
     text-decoration: none;
   }
 }
