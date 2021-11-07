@@ -152,8 +152,12 @@
   .blog {
     display: block;
     margin-bottom: 15%;
+    justify-content: center;
   }
   .blog__card {
+    width: 100%;
+  }
+  .blog__card-img {
     width: 100%;
   }
   .blog__card-date {
