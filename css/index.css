@@ -8,7 +8,8 @@
   width: 70%;
 }
 .header__nav {
-  display: flex;
+  source.zshrcdisplay: flex;
+  .zshrcdisplay
   width: 100%;
   justify-content: right;
   align-items: center;
@@ -38,7 +39,7 @@
   }
   .nav {
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     left: -100%;
     background: #f8f8f8;
@@ -250,7 +251,6 @@
 @media screen and (max-width: 768px) {
   .service__con {
     width: 100%;
-    margin-left: 3%;
   }
   .service__con-1 {
     width: 90%;
